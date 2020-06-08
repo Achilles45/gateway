@@ -36,7 +36,7 @@
              <small>You can now make request to make withdrawal into your local bank when your investment has reached maturity</small>
              <hr>
               <div v-if="verifyuser == 'false'" class="red">
-                  You can't make withdrawals because your account or payment has not been verified. Please contact admin or call <a href="tel:09045091863">09045091863</a>
+                  You can't make withdrawals because your account or payment has not been verified. Please contact admin or call <a href="tel:07044387160">07044387160</a>
               </div>
                <div class="row">
                    <div class="col-md-8">
@@ -48,19 +48,19 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="bank_name">Your Bank</label>
-                               <input type="text" class="form-control" v-bind:value="user_bank">
+                               <input type="text" class="form-control" disabled v-bind:value="user_bank">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="account">Your Account Number</label>
-                                <input type="text" class="form-control" v-bind:value="user_account_number">
+                                <input type="text" class="form-control" disabled v-bind:value="user_account_number">
                             </div>
                         </div>
                     </div>
                      <div class="form-group">
                         <label for="account">Your Account Name</label>
-                        <input type="text" class="form-control" v-bind:value="user_bank_name">
+                        <input type="text" class="form-control" disabled v-bind:value="user_bank_name">
                             </div>
                     <div class="row">
                         <div class="col-md-6">
@@ -70,7 +70,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control"  v-bind="amount" placeholder="Amount to withdraw">
+                                <input type="text" class="form-control"  v-bind="amount" placeholder="Amount to withdraw" v-model="amount">
                         </div>
                         </div>
                     </div><div v-if="err" class="alert alert-danger animated slideInRight">
@@ -131,7 +131,8 @@ export default {
         },
         //Function for the withdrawal process here
         withdraw(){
-           // Check if the user has filled the form
+           setTimeout(() => {
+               // Check if the user has filled the form
            if(!this.user_bank || !this.user_bank_name ||!this.user_account_number|| !this.amount || !this.date){
                this.err = 'Please completely fill the form and try again'
                this.removeAlert()
@@ -143,6 +144,7 @@ export default {
            else{
                this.success = 'Your withdrawal request was submitted successful. We will get back to you in 24 hours'
            }
+           }, 5000);
         },
          removeAlert(){
         setTimeout(() => {
@@ -215,6 +217,17 @@ export default {
     .dashboard__right{
         background: #fafafa;
         padding: 3rem 2.5rem;
+        .heading{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  position: relative;
+                  .navbar__toggler{
+                      color:$primary-color;
+                      position: absolute;
+                      right: 5%;
+                  }
+              }
        small{
             color:#627081;
            font-size: .8rem;

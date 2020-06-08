@@ -198,6 +198,17 @@ export default {
     .dashboard__right{
         background: #fafafa;
         padding: 3rem 2.5rem;
+        .heading{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  position: relative;
+                  .navbar__toggler{
+                      color:$primary-color;
+                      position: absolute;
+                      right: 5%;
+                  }
+              }
        small{
            color:#627081;
            font-size: .8rem;
