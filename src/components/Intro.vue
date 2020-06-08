@@ -9,7 +9,7 @@
           <div class="col-md-5">
               <h2>Gateway <span class="orange">Investment Company</span></h2>
               <hr>
-              <p>Gateway investment limited was created with the aim of eliminating poverty and hardship from Nigeria. It's a reliable and genuine platform created for the benefit of every Nigerian to achieve wealth and happiness by investing and getting back your investment in 5days and 24hours without any delay or stress in payment</p>
+              <p>Gateway Investment Limited was created with the aim of eliminating poverty and hardship from Nigeria. It's a reliable and genuine platform created for the benefit of every Nigerian to achieve wealth and happiness by investing and getting back your investment in 5days and 24hours without any delay or stress in payment</p>
                <router-link to="/signup" class="intro-btn animated zoomIn animate3d">Get Started <i class="fas fa-long-arrow-alt-right"></i> </router-link>
           </div>
       </div>
@@ -66,7 +66,7 @@ export default {
         line-height: 2;
         padding-top: .5rem;
         color: #fff;
-        opacity: .6;
+        opacity: .65;
         font-size: .82rem;
         padding-bottom: 1.5rem;
     }

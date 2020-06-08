@@ -7,7 +7,7 @@
           <img class="carousel-img" src="../assets/images/banner2.jpg" alt="First slide" />
           <div class="carousel-caption">
             <h1 class="animate__animated animate__bounceIn">EARN 60% of YOUR <span class="orange">INITIAL INVESTMENT IN 5 DAYS</span></h1>
-            <p>You can grow your initial investment to as much as 50% in 5 working days, or 50% in 44 hours when you select our promo plans. No stories, no stress.</p>
+            <p>You can grow your initial investment to as much as 60% in 5 working day or in 24 hours when you select our promo plans. This applies to only new members. No stories, no stress.</p>
             <router-link to="/signup" class="carousel-btn animated zoomIn animate3d">Get Started <i class="fas fa-long-arrow-alt-right"></i> </router-link>
           </div>
         </div>
@@ -29,7 +29,7 @@
             <h1 class="animated slideInDown animate3d">Helping you make <span class="orange">smart investments</span></h1>
             <p
               class="animated slideInRight animate3d"
-            >Our investment plans provides equall investment opportunities for everyone. You can begin with as little as &#8358;10,00.00. Why not join the winning train!</p>
+            >Our investment plans provides equall investment opportunities for everyone. You can begin with as little as &#8358;10,000.00. Why not join the winning train!</p>
              <router-link to="/signup" class="carousel-btn animated zoomIn animate3d">Get Started <i class="fas fa-long-arrow-alt-right"></i> </router-link>
           </div>
         </div>

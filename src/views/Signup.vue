@@ -106,7 +106,7 @@ export default {
             verifified: 'false',
             user_bank:null,
             user_account_number:null,
-            user_bank_name:null
+            user_bank_name:null,
         }
     },
     methods:{
@@ -122,7 +122,7 @@ export default {
                 this.err = 'Oops! Your password did not match'
             }else{
                 //Signup the user
-                this.loading = false
+                this.loading = true
                 firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
                 .then((cred)=>{
                      db.collection('users').add({
@@ -142,6 +142,7 @@ export default {
                         user_account_number:this.user_account_number
 
                 })
+                this.loading = false
                 this.$router.push({name: 'dashboard'})
                 })
             }
@@ -193,7 +194,7 @@ export default {
             }
             }
              .loader{
-                // max-width: 250px;
+                max-width: 250px;
                 height: 100px;
             }
             .signup__btn{

@@ -26,7 +26,7 @@
                         <div class="icon__wrapper">
                             <p><i class="fa fa-phone"></i></p>
                         </div>
-                        <p class="pl-3">07044387160</p>
+                        <p class="pl-3">07061116827</p>
                     </div>
                   </div><br>
                    <div class="col-md-4">
@@ -34,7 +34,7 @@
                      <div class="icon__wrapper">
                             <p><i class="fa fa-home"></i></p>
                      </div>
-                        <p class="pl-3">No 22 Obiopko L.G.A GRA Phase 5 Off Josh Avenue Close to Hankies Hills Eatery Nasarawa State.</p>
+                        <p class="pl-3">NO.16 Alabarao Market, Badagry Express Way, Okokomaiko,Lagos State, Nigeria.</p>
                     </div>
                   </div>
                   <br>
@@ -49,26 +49,35 @@
               </div>
               <div class="row">
                   <div class="col-12">
-                       <form action="">
+                       <form @submit.prevent="sendMessage()">
                           <div class="row">
                               <div class="col-md-6">
                                   <div class="form-group">
                                       <!-- <label for="">First Name</label> -->
-                                      <input type="text" class="form-control" placeholder="Your First Name">
+                                      <input type="text" class="form-control" placeholder="Your First Name" v-model="first_name">
                                   </div>
                                    <div class="form-group">
                                         <!-- <label for="">Last Name</label> -->
-                                      <input type="text" class="form-control" placeholder="Your Last Name">
+                                      <input type="text" class="form-control" placeholder="Your Last Name" v-model="last_name">
                                   </div>
                                    <div class="form-group">
                                         <!-- <label for="">Email Address</label> -->
-                                      <input type="email" class="form-control" placeholder="Your Email">
+                                      <input type="tel" class="form-control" placeholder="Phone Number" v-model="phone_number">
                                   </div>
                               </div>
                               <div class="col-md-6">
                                    <!-- <label for="">Your Message</label> -->
-                                  <textarea name="" id="" cols="20" rows="6" class="form-control" placeholder="Your Message">
+                                  <textarea name="" id="" cols="20" rows="6" class="form-control" placeholder="Your Message" v-model="message">
                                   </textarea><br><br>
+                                   <div v-if="loading" class="loading">
+                                      <img src="../assets/images/loader.gif" class="loader__img" alt="">
+                                  </div>
+                                  <div v-if="err" class="alert alert-danger">
+                                      {{ err }}
+                                  </div>
+                                  <div v-if="success" class="alert alert-success">
+                                      {{ success }}
+                                  </div>
                                   <button type="submit" class="message__btn">Send Message</button>
                               </div>
                           </div>
@@ -82,6 +91,8 @@
 </template>
 
 <script>
+import firebase from 'firebase'
+import db from '@/firebase/init'
 import Topbar from '@/components/Topbar.vue'
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
@@ -90,6 +101,38 @@ components:{
     Topbar,
     Navbar,
     Footer
+},
+data(){
+    return{
+        first_name:null,
+        last_name: null,
+        phone_number: null,
+        message: null,
+        err: null,
+        success: null,
+        loading:false
+    }
+},
+methods:{
+    sendMessage(){
+        //Check if all the fields has been filled out
+        if(!this.first_name || !this.last_name || !this.phone_number || !this.message){
+            this.err = "Please completely fill out the form and try again"
+        }else{
+            this.loading = true
+            db.collection('messages').add({
+                first_name:this.first_name,
+                last_name: this.last_name,
+                phone_number: this.phone_number,
+                message: this.message
+            }).then(()=>{
+                this.loading = false;
+                this.success = "Your message was successfully sent. We will get back to you shortly."
+            }).catch(err=>{
+                this.err = err.message
+            })
+        }
+    }
 }
 }
 </script>
@@ -186,11 +229,16 @@ components:{
             border-radius: 50px;
             // width: 100%;
             padding: 1rem 2rem;
+            outline: none;
             &:hover{
                 background: $primary-color;
                 transition: all ease-in-out .5s;
             }
         }
     }
+}
+.loader__img{
+    max-width: 150px;
+    height: auto;
 }
 </style>

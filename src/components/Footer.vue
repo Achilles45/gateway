@@ -10,11 +10,11 @@
                <div class="col-md-4">
                   <h5>Our Location & Contact</h5>
                 <h6><i class="fa fa-home"></i> Head Office</h6>
-                <p>No 22 Obiopko L.G.A GRA Phase 5 Off Josh Avenue Close to Hankies Hills Eatery Nasarawa State.</p>
+                <p>NO.16 Alabarao Market, Badagry Express Way, Okokomaiko,Lagos State, Nigeria.</p>
                  <h6><i class="fa fa-envelope"></i>Email Address</h6>
                 <p>gatewayinvestment09@gmail.com</p>
                  <h6><i class="fa fa-phone"></i>Phone</h6>
-                <p><a href="tel:08094986967"> 07044387160</a></p>
+                <p><a href="tel:07061116827"> 07061116827</a></p>
               </div>
               <div class="col-md-4">
                   <h5>Payment Method</h5>
