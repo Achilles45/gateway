@@ -63,7 +63,7 @@
                     <div class="summary__card two pt-4">
                      <i class="fa fa-credit-card"></i>
                      <div class="content pl-4">
-                         <h6>Total Profit(50% plus your capital)</h6>
+                         <h6>Total Profit(60% plus your capital)</h6>
                          <h5>&#8358; {{ available_balance }}</h5>
                      </div>
                   </div>
