@@ -17,7 +17,6 @@
                <div class="form-group">
                       <small id="passwordHelpBlock" class="form-text text-muted">Select your account type</small>
                   <select class="form-control" id="inlineFormCustomSelect" v-model="account_type">
-                            <option value="10,000">&#8358;10,000 to &#8358;16,000</option>
                             <option value="20,000">&#8358;20,000 to &#8358;32,000</option>
                             <option value="30,000">&#8358;30,000 to &#8358;52,000</option>
                             <option value="40,000">&#8358;40,000 to &#8358;70,000</option>
