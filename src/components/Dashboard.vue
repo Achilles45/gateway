@@ -81,8 +81,22 @@
                          <p>Please send a message using the livechat widget on the website. Our customer support team will reach out to you in less 24 hours.</p>
                      </div>
                   </div>
+                  <div class="summary__card four pt-4">
+                     <i class="fa fa-comments"></i>
+                     <div class="content pl-4">
+                         <h6>Messages</h6>
+                         <p v-if="message">{{ message }}</p>
+                         <p v-if="!message">Hello, Welcome to Gateway Investment PLC, your financial company of choice to help you grow your finances.</p>
+                     </div>
+                  </div>
               </div>
               </div>
+               <hr>
+            <VueTradingView :options="{
+            symbol: 'NASDAQ:AAPL',
+            theme: 'dark',
+            width: '100%'
+            }" />
               <hr>
               <p class="note">Kindly note that your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of 50% of your investment and your capital would be paid back in 5 working days. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
               </div>
@@ -96,6 +110,7 @@
 <script>
 import db from '@/firebase/init'
 import firebase from 'firebase'
+import VueTradingView from 'vue-trading-view';
 export default {
     data(){
         return{
@@ -104,13 +119,17 @@ export default {
             account_type:null,
             id:null,
             available_balance:null,
-            verifyuser:null
+            verifyuser:null,
+            message: null
         }
     },
     computed:{
         available(){
             return this.available_balance * 0.6
         }
+    },
+     components:{
+        VueTradingView
     },
      methods:{
           show:function(){
@@ -146,7 +165,8 @@ export default {
                 this.available_balance = doc.data().available_balance,
                 this.account_type = doc.data().account_type,
                 this.verifyuser = doc.data().verifyuser
-                this.id = doc.data().user_id
+                this.id = doc.data().user_id,
+                this.message = doc.data().message
             })
         })
     }

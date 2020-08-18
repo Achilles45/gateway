@@ -43,7 +43,7 @@
           </div>
           <div class="row">
               <div class="col-12">
-                    <p>These are some of the product we deal on that helps the company generate quick returns to pay investors in five days for initial investment and in 24 hours for the promo package. Want to grow your money, give us a try today!</p>
+                    <p>These are some of the product we deal on that helps the company generate quick returns to pay investors in three (3) days for initial investment and in 24 hours for the promo package. Want to grow your money, give us a try today!</p>
               </div>
           </div>
       </div>
