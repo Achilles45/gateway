@@ -17,7 +17,7 @@
                <div class="card__content">z
                   <img src="../assets/images/growth.svg" class="icons" alt="">
                   <h3>AMAZING GROWTH OPPORTUNITIES</h3>
-                  <p>You will get profit of 30% ROI in 3 days on your initial investment. No stress, no stories!</p>
+                  <p>You will get profit of 30% ROI in 2 days on your initial investment. No stress, no stories!</p>
                    <router-link to="/signup" class="card__btn">Get Started</router-link><br><br>
               </div>
                <div class="card__content">

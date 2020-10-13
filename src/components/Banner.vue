@@ -6,8 +6,8 @@
           <div class="carousel-overlay"></div>
           <img class="carousel-img" src="../assets/images/banner2.jpg" alt="First slide" />
           <div class="carousel-caption">
-            <h1 class="animate__animated animate__bounceIn">EARN 30% of YOUR <span class="orange">INITIAL INVESTMENT IN 3 DAYS</span></h1>
-            <p>You can grow your initial investment to as much as 30% in 3 working day or in 24 hours when you select our promo plans. This applies to only new members. No stories, no stress.</p>
+            <h1 class="animate__animated animate__bounceIn">EARN 30% of YOUR <span class="orange">INITIAL INVESTMENT IN 2 DAYS</span></h1>
+            <p>You can grow your initial investment to as much as 30% in 2 working day or in 24 hours when you select our promo plans. This applies to only new members. No stories, no stress.</p>
             <router-link to="/signup" class="carousel-btn animated zoomIn animate3d">Get Started <i class="fas fa-long-arrow-alt-right"></i> </router-link>
           </div>
         </div>

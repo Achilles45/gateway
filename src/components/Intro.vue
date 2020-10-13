@@ -7,9 +7,9 @@
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-5">
-              <h2>Gateway <span class="orange">Investment Company</span></h2>
+              <h2>Wealthplus <span class="orange">Investment Company</span></h2>
               <hr>
-              <p>Gateway Investment Limited was created with the aim of eliminating poverty and hardship from Nigeria. It's a reliable and genuine platform created for the benefit of every Nigerian to achieve wealth and happiness by investing and getting back your investment in 3 days and 24hours without any delay or stress in payment</p>
+              <p>Wealthplus Investment Limited was created with the aim of eliminating poverty and hardship from Nigeria. It's a reliable and genuine platform created for the benefit of every Nigerian to achieve wealth and happiness by investing and getting back your investment in 2 days and 24hours without any delay or stress in payment</p>
                <router-link to="/signup" class="intro-btn animated zoomIn animate3d">Get Started <i class="fas fa-long-arrow-alt-right"></i> </router-link>
           </div>
       </div>

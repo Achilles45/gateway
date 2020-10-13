@@ -63,7 +63,7 @@
                     <div class="summary__card two pt-4">
                      <i class="fa fa-credit-card"></i>
                      <div class="content pl-4">
-                         <h6>Total Profit(50% plus your capital)</h6>
+                         <h6>Total Profit(30% plus your capital)</h6>
                          <h5>&#8358; {{ available_balance }}</h5>
                      </div>
                   </div>
@@ -86,7 +86,7 @@
                      <div class="content pl-4">
                          <h6>Messages</h6>
                          <p v-if="message">{{ message }}</p>
-                         <p v-if="!message">Hello, Welcome to Gateway Investment PLC, your financial company of choice to help you grow your finances.</p>
+                         <p v-if="!message">Hello, Welcome to Wealthplus Investment, your financial company of choice to help you grow your finances.</p>
                      </div>
                   </div>
               </div>
@@ -98,7 +98,7 @@
             width: '100%'
             }" />
               <hr>
-              <p class="note">Kindly note that your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of 50% of your investment and your capital would be paid back in 5 working days. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
+              <p class="note">Kindly note that your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of 30% of your investment and your capital would be paid back in 2 working days. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
               </div>
             <!--End of Dashboard
             =========================-->

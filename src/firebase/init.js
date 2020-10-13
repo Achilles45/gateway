@@ -2,14 +2,14 @@ import firebase from 'firebase';
 import firestore from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA2Rjzcn95PtL405jEQYkX-XMh60BOamXA",
-  authDomain: "gateway-investment.firebaseapp.com",
-  databaseURL: "https://gateway-investment.firebaseio.com",
-  projectId: "gateway-investment",
-  storageBucket: "gateway-investment.appspot.com",
-  messagingSenderId: "203788309952",
-  appId: "1:203788309952:web:b5c3958e63592cc0482425",
-  measurementId: "G-4C4QMK9WTP"
+  apiKey: "AIzaSyDtfu9Sf7TaquBufPnDfbIo7KOE3qa0Qlo",
+  authDomain: "wealth-plus-95aca.firebaseapp.com",
+  databaseURL: "https://wealth-plus-95aca.firebaseio.com",
+  projectId: "wealth-plus-95aca",
+  storageBucket: "wealth-plus-95aca.appspot.com",
+  messagingSenderId: "911977702313",
+  appId: "1:911977702313:web:e7b737369fc877b5461ab8",
+  measurementId: "G-DEF4LSNBTC"
 };
   // Initialize Firebase
   const firebaseApp = firebase.initializeApp(firebaseConfig);
