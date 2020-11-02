@@ -27,6 +27,11 @@
                    <router-link to="/signup" class="card__btn">Get Started</router-link><br><br>
               </div>
           </div>
+          <div class="row">
+              <div class="col-12 text-center">
+                  <strong>Note: Our Primary Investment is composary, 100% of whatever you donated in the system.</strong>
+              </div>
+          </div>
       </div>
   </div>
 </template>
